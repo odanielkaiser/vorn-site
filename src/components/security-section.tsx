@@ -13,14 +13,14 @@ import {
 } from "lucide-react";
 
 const items = [
-  { icon: Shield, title: "Firewall", description: "Protecao de perimetro com bloqueio de ameacas" },
-  { icon: Wifi, title: "VPN", description: "Acesso remoto seguro com criptografia" },
-  { icon: KeyRound, title: "MFA", description: "Autenticacao multifator para todos os acessos" },
-  { icon: HardDrive, title: "Backups", description: "Copias de seguranca automatizadas e testadas" },
-  { icon: Eye, title: "Monitoramento", description: "Vigilancia 24/7 de toda a infraestrutura" },
-  { icon: FileCheck, title: "LGPD", description: "Adequacao as normas de protecao de dados" },
-  { icon: Terminal, title: "Hardening", description: "Configuracao segura de servidores e redes" },
-  { icon: Bug, title: "Vulnerabilidades", description: "Analise e gestao continua de vulnerabilidades" },
+  { icon: Shield, color: "text-emerald-400", title: "Firewall", description: "Protecao de perimetro com bloqueio de ameacas" },
+  { icon: Wifi, color: "text-sky-400", title: "VPN", description: "Acesso remoto seguro com criptografia" },
+  { icon: KeyRound, color: "text-amber-400", title: "MFA", description: "Autenticacao multifator para todos os acessos" },
+  { icon: HardDrive, color: "text-orange-400", title: "Backups", description: "Copias de seguranca automatizadas e testadas" },
+  { icon: Eye, color: "text-cyan-400", title: "Monitoramento", description: "Vigilancia 24/7 de toda a infraestrutura" },
+  { icon: FileCheck, color: "text-emerald-400", title: "LGPD", description: "Adequacao as normas de protecao de dados" },
+  { icon: Terminal, color: "text-purple-400", title: "Hardening", description: "Configuracao segura de servidores e redes" },
+  { icon: Bug, color: "text-rose-400", title: "Vulnerabilidades", description: "Analise e gestao continua de vulnerabilidades" },
 ];
 
 export function SecuritySection() {
@@ -67,7 +67,7 @@ export function SecuritySection() {
                 >
                   <div className="relative text-center">
                     <div className="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center mx-auto mb-3 group-hover:bg-white/10 transition-colors">
-                      <Icon className="w-5.5 h-5.5 text-white/50" />
+                      <Icon className={`w-5.5 h-5.5 ${item.color}`} />
                     </div>
                     <h3 className="text-sm font-heading font-semibold mb-1">{item.title}</h3>
                     <p className="text-xs text-text-secondary leading-relaxed">{item.description}</p>

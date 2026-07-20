@@ -6,31 +6,37 @@ import { motion } from "framer-motion";
 const features = [
   {
     icon: Network,
+    color: "text-sky-400",
     title: "Infraestrutura Profissional",
     description: "Redes corporativas, servidores, virtualização e cloud organizados com padrão enterprise.",
   },
   {
     icon: Shield,
+    color: "text-emerald-400",
     title: "Segurança por padrão",
     description: "Firewall, VPN, controle de acesso e hardening aplicados em todos os ambientes.",
   },
   {
     icon: Monitor,
+    color: "text-blue-400",
     title: "Monitoramento contínuo",
     description: "24/7 monitorando servidores, redes, links e dispositivos com alertas inteligentes.",
   },
   {
     icon: HeadphonesIcon,
+    color: "text-purple-400",
     title: "Suporte especializado",
     description: "Equipe técnica certificada pronta para atender sua demanda com agilidade.",
   },
   {
     icon: HardDrive,
+    color: "text-orange-400",
     title: "Backup automatizado",
     description: "Políticas de backup locais e em nuvem com testes de restauração periódicos.",
   },
   {
     icon: FileText,
+    color: "text-amber-400",
     title: "Documentação completa",
     description: "Toda a infraestrutura documentada: redes, senhas, processos e topologias.",
   },
@@ -74,7 +80,7 @@ export function WhyVorn() {
               >
                 <div className="relative">
                   <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-5 group-hover:bg-white/10 transition-colors duration-300">
-                    <Icon className="w-6 h-6 text-white/60" />
+                    <Icon className={`w-6 h-6 ${feature.color}`} />
                   </div>
                   <h3 className="text-lg font-heading font-semibold mb-2">
                     {feature.title}

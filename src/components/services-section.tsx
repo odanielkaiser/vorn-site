@@ -18,60 +18,70 @@ import Link from "next/link";
 const services = [
   {
     icon: Server,
+    color: "text-sky-400",
     title: "Infraestrutura Corporativa",
     description: "Redes estruturadas, servidores, virtualizacao e datacenter para sua empresa operar sem interrupcoes.",
     href: "/servicos/infraestrutura",
   },
   {
     icon: ShieldCheck,
+    color: "text-emerald-400",
     title: "Firewall Gerenciado",
     description: "Protecao de rede com firewall de nivel empresarial, IPS/IDS, VPN e controle de acesso.",
     href: "/servicos/firewall",
   },
   {
     icon: Terminal,
+    color: "text-purple-400",
     title: "Servidores Linux",
     description: "Servidores Linux robustos, seguros e otimizados para alta disponibilidade.",
     href: "/servicos/servidores",
   },
   {
     icon: HardDrive,
+    color: "text-orange-400",
     title: "Backup Empresarial",
     description: "Backup automatizado com politica 3-2-1, criptografia e testes de restauracao.",
     href: "/servicos/backup",
   },
   {
     icon: Eye,
+    color: "text-cyan-400",
     title: "Monitoramento 24/7",
     description: "Monitoramento continuo de servidores, redes e servicos com alertas em tempo real.",
     href: "/servicos/monitoramento",
   },
   {
     icon: Radio,
+    color: "text-emerald-400",
     title: "VPN Corporativa",
     description: "Acesso remoto seguro com criptografia de ponta a ponta para sua equipe.",
     href: "/servicos/infraestrutura",
   },
   {
     icon: Wifi,
+    color: "text-blue-400",
     title: "Redes Wi-Fi Empresariais",
     description: "Rede sem fio corporativa com controle de acesso, segmentacao e qualidade.",
     href: "/servicos/infraestrutura",
   },
   {
     icon: Cpu,
+    color: "text-rose-400",
     title: "Virtualizacao",
     description: "Ambientes virtualizados com Proxmox e Docker para maxima eficiencia.",
     href: "/servicos/servidores",
   },
   {
     icon: FileText,
+    color: "text-amber-400",
     title: "Documentacao Tecnica",
     description: "Documentacao completa da sua infraestrutura: redes, senhas, processos e topologias.",
     href: "/servicos/infraestrutura",
   },
   {
     icon: BarChart3,
+    color: "text-indigo-400",
     title: "Consultoria em TI",
     description: "Planejamento estrategico, adequacao a LGPD e projetos de infraestrutura.",
     href: "/servicos/seguranca",
@@ -119,7 +129,7 @@ export function ServicesSection() {
                 >
                   <div className="relative">
                     <div className="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center mb-5 group-hover:bg-white/10 transition-colors duration-300">
-                      <Icon className="w-5.5 h-5.5 text-white/60" />
+                      <Icon className={`w-5.5 h-5.5 ${service.color}`} />
                     </div>
                     <h3 className="text-base font-heading font-semibold mb-2 group-hover:text-white transition-colors">
                       {service.title}

@@ -21,6 +21,13 @@ const iconMap: Record<string, React.ElementType> = {
   "Microsoft 365": Cloud,
 };
 
+const iconColors: Record<string, string> = {
+  Zabbix: "text-emerald-400",
+  Wazuh: "text-emerald-400",
+  UniFi: "text-sky-400",
+  "Microsoft 365": "text-blue-400",
+};
+
 const techs = Object.keys(iconMap);
 
 export function TechStack() {
@@ -51,6 +58,7 @@ export function TechStack() {
         <div className="marquee-track flex gap-5" style={{ animationDuration: "45s" }}>
           {[...techs, ...techs].map((name, i) => {
             const Icon = iconMap[name];
+            const color = iconColors[name] || "";
             return (
               <div
                 key={`${name}-${i}`}
@@ -58,7 +66,7 @@ export function TechStack() {
               >
                 <div className="relative flex flex-col items-center text-center">
                   <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-3 group-hover:bg-white/10 transition-colors">
-                    <Icon className="w-6 h-6" />
+                    <Icon className={`w-6 h-6 ${color}`} />
                   </div>
                   <span className="text-sm font-heading font-semibold text-text-secondary/80 group-hover:text-text-primary transition-colors">
                     {name}

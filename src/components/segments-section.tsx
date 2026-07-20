@@ -13,13 +13,13 @@ import {
 } from "lucide-react";
 
 const segments = [
-  { icon: Stethoscope, title: "Clinicas", description: "Prontuario eletronico, LGPD, backup e rede estruturada." },
-  { icon: Building2, title: "Escritorios", description: "Infraestrutura completa para escritorios de qualquer porte." },
-  { icon: Calculator, title: "Contabilidades", description: "Seguranca e disponibilidade para dados financeiros." },
-  { icon: Scale, title: "Advocacias", description: "Sigilo, backup e conformidade para escritorios de advocacia." },
-  { icon: Store, title: "Comercios", description: "PDV, rede Wi-Fi corporativa e monitoramento." },
-  { icon: Factory, title: "Industrias", description: "Redes industriais, servidores e automacao." },
-  { icon: GraduationCap, title: "Educacao", description: "Ambientes de aprendizado com tecnologia confiavel." },
+  { icon: Stethoscope, color: "text-rose-400", title: "Clinicas", description: "Prontuario eletronico, LGPD, backup e rede estruturada." },
+  { icon: Building2, color: "text-sky-400", title: "Escritorios", description: "Infraestrutura completa para escritorios de qualquer porte." },
+  { icon: Calculator, color: "text-emerald-400", title: "Contabilidades", description: "Seguranca e disponibilidade para dados financeiros." },
+  { icon: Scale, color: "text-amber-400", title: "Advocacias", description: "Sigilo, backup e conformidade para escritorios de advocacia." },
+  { icon: Store, color: "text-orange-400", title: "Comercios", description: "PDV, rede Wi-Fi corporativa e monitoramento." },
+  { icon: Factory, color: "text-purple-400", title: "Industrias", description: "Redes industriais, servidores e automacao." },
+  { icon: GraduationCap, color: "text-indigo-400", title: "Educacao", description: "Ambientes de aprendizado com tecnologia confiavel." },
 ];
 
 export function SegmentsSection() {
@@ -60,7 +60,7 @@ export function SegmentsSection() {
               >
                 <div className="relative">
                   <div className="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center mb-4 group-hover:bg-white/10 transition-colors">
-                    <Icon className="w-5.5 h-5.5 text-white/50" />
+                    <Icon className={`w-5.5 h-5.5 ${segment.color}`} />
                   </div>
                   <h3 className="text-base font-heading font-semibold mb-2">{segment.title}</h3>
                   <p className="text-sm text-text-secondary leading-relaxed">{segment.description}</p>

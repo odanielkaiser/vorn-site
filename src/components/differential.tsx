@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import { CheckCircle, Activity, Shield, HardDrive, Wifi, Cpu } from "lucide-react";
 
 const metrics = [
-  { label: "Servidores Online", value: "12", icon: Cpu, status: "online" },
-  { label: "Firewall Protegido", value: "Ativo", icon: Shield, status: "active" },
-  { label: "Backup OK", value: "99.9%", icon: HardDrive, status: "ok" },
-  { label: "Links Ativos", value: "8/8", icon: Wifi, status: "online" },
+  { label: "Servidores Online", value: "12", icon: Cpu, color: "text-rose-400", status: "online" },
+  { label: "Firewall Protegido", value: "Ativo", icon: Shield, color: "text-emerald-400", status: "active" },
+  { label: "Backup OK", value: "99.9%", icon: HardDrive, color: "text-sky-400", status: "ok" },
+  { label: "Links Ativos", value: "8/8", icon: Wifi, color: "text-cyan-400", status: "online" },
 ];
 
 export function Differential() {
@@ -79,7 +79,7 @@ export function Differential() {
                       className="p-4 rounded-xl bg-bg-primary/50 border border-white/10"
                     >
                       <div className="flex items-center gap-2 mb-3">
-                        <Icon className="w-4 h-4 text-white/40" />
+                        <Icon className={`w-4 h-4 ${metric.color}`} />
                         <span className="text-xs text-white/30 font-mono">
                           {metric.label}
                         </span>
