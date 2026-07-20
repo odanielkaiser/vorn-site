@@ -85,7 +85,7 @@ export function ServiceDetailClient({
                 <ul className="space-y-4">
                   {service.benefits.map((b) => (
                     <li key={b} className="flex items-start gap-3 text-sm text-text-secondary">
-                      <CheckCircle className="w-5 h-5 text-white/30 shrink-0 mt-0.5" />
+                      <CheckCircle className="w-5 h-5 text-green-400/70 shrink-0 mt-0.5" />
                       {b}
                     </li>
                   ))}

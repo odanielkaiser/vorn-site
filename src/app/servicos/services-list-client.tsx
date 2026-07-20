@@ -40,7 +40,7 @@ export function ServicesListClient({ services }: { services: ServiceItem[] }) {
             <div className="space-y-2 mb-6">
               {service.benefits.slice(0, 3).map((b) => (
                 <div key={b} className="flex items-center gap-2 text-xs text-text-secondary">
-                  <CheckCircle className="w-3.5 h-3.5 text-white/30 shrink-0" />
+                  <CheckCircle className="w-3.5 h-3.5 text-green-400/70 shrink-0" />
                   {b}
                 </div>
               ))}

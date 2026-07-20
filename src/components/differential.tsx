@@ -41,7 +41,7 @@ export function Differential() {
                 "Investimento previsivel com mensalidade fixa",
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3 text-sm text-text-secondary">
-                  <CheckCircle className="w-5 h-5 text-white/40 shrink-0 mt-0.5" />
+                  <CheckCircle className="w-5 h-5 text-green-400/70 shrink-0 mt-0.5" />
                   {item}
                 </li>
               ))}
