@@ -71,7 +71,7 @@ export function HowItWorks() {
               >
                 <div className={`flex-1 ${i % 2 === 0 ? "md:text-right" : ""}`}>
                   <div className={`max-w-md ${i % 2 === 0 ? "md:ml-auto" : ""}`}>
-                    <span className="text-5xl lg:text-6xl font-heading font-bold text-white/5">
+                    <span className="text-5xl lg:text-6xl font-heading font-bold text-primary/20">
                       {step.number}
                     </span>
                     <h3 className="text-xl font-heading font-semibold mt-2 mb-3">

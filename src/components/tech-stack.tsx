@@ -57,8 +57,8 @@ export function TechStack() {
                 className="group relative flex-shrink-0 w-[180px] p-5 rounded-2xl bg-bg-card border border-white/10 hover:border-white/20 transition-all duration-500 hover:-translate-y-1 cursor-default"
               >
                 <div className="relative flex flex-col items-center text-center">
-                  <div className="w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center mb-3 group-hover:bg-white/10 transition-colors">
-                    <Icon className="w-5 h-5 text-white/50" />
+                  <div className="w-12 h-12 rounded-xl bg-white/5 flex items-center justify-center mb-3 group-hover:bg-white/10 transition-colors">
+                    <Icon className="w-6 h-6 text-white/50" />
                   </div>
                   <span className="text-sm font-heading font-semibold text-text-secondary/80 group-hover:text-text-primary transition-colors">
                     {name}
